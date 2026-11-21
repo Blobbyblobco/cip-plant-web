@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIP Plant – Android app</title>
+<style>
+  :root { --brand: #7a5c0e; --ink: #1f1b16; --muted: #5f5a52; --bg: #fff8f0; --card: #f6ecdc; --warn: #fdf0d2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: var(--bg); color: var(--ink); line-height: 1.5; }
+  main { max-width: 520px; margin: 0 auto; padding: 28px 20px 48px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .btn { display: block; text-align: center; background: var(--brand); color: #fff; text-decoration: none;
+         font-size: 19px; font-weight: 600; padding: 16px; border-radius: 28px; }
+  .size { text-align: center; color: var(--muted); font-size: 14px; margin: 8px 0 22px; }
+  .card { background: var(--card); border-radius: 16px; padding: 18px 20px; margin-bottom: 16px; }
+  .warn { background: var(--warn); }
+  .card h2 { font-size: 17px; margin: 0 0 8px; }
+  ol, ul { margin: 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  .note { color: var(--muted); font-size: 14px; margin: 0; }
+  a.small { color: var(--brand); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CIP Plant</h1>
+  <p class="sub">Daily plant sheet app for shift foremen (Android).</p>
+
+  <div class="card warn">
+    <h2>Opened this from WhatsApp?</h2>
+    <p class="note" style="color:var(--ink)">Tap <b>⋮</b> (top right) → <b>Open in Chrome</b> first. Downloads often don't work inside WhatsApp.</p>
+  </div>
+
+  <a class="btn" href="cip-plant.apk" download>Download the app</a>
+  <p class="size">About 37 MB. Works on Android 7 and newer.</p>
+
+  <div class="card">
+    <h2>Install</h2>
+    <ol>
+      <li>Tap <b>Download the app</b>. If Chrome says <i>"File might be harmful"</i>, tap <b>Download anyway</b>.</li>
+      <li>When it finishes, tap <b>Open</b> (or find it in <b>Files → Downloads</b>).</li>
+      <li>If asked, allow <b>Install unknown apps</b> for Chrome, then go back.</li>
+      <li>Tap <b>Install</b>. If Play Protect says the app is <i>unsafe</i> or <i>blocked</i>, tap <b>More details → Install anyway</b>. This shows for any app that isn't from the Play Store.</li>
+      <li>Open <b>CIP Plant</b> and sign in with the username and password your manager gave you. The first sign-in needs signal; after that it works offline.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Says "invalid" or "App not installed"?</h2>
+    <ul>
+      <li>Check the phone is <b>Android 7 or newer</b>: Settings → About phone → Android version.</li>
+      <li>Download again in <b>Chrome</b> (not inside WhatsApp) and make sure it finishes completely.</li>
+      <li>Still failing? Send your manager a screenshot of the message and the phone model.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Updating</h2>
+    <p class="note">When there's a new version, download and install it the same way. It installs over the old one and keeps your data. Don't uninstall first, or any readings that haven't been sent yet will be lost.</p>
+  </div>
+</main>
+</body>
+</html>
